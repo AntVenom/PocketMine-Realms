@@ -19,7 +19,7 @@ class PMRealms implements Plugin{
 	
 	public function init(){
 		$this->config = new Config($this->api->plugin->configPath($this)."config.yml", CONFIG_YAML, array(
-			"ownerName" => "",
+			"ownerName" => "",Y0UNGBL00D64
 			"externalAddress" => "",
 			"externalPort" => "",
 		));
@@ -65,7 +65,7 @@ class PMRealms implements Plugin{
 				"name" => $this->server->name,
 				"maxNrPlayers" => $this->server->maxClients,
 				"nrPlayers" => count($this->api->player->getAll()),
-				"type" => ($this->server->api->getProperty("gamemode") & 0x01) === 1 ? "creative":"survival",
+				"type" => ($this->server->api->getProperty("gamemode") & 0x01) === 1 ? "creative":"survival",survival
 				"whitelist" => $this->server->api->getProperty("white-list"),
 			),
 		));
